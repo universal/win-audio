@@ -32,7 +32,7 @@
   ],
   "binary": {
     "module_name": "win-audio",
-    "module_path": "./src/",
+    "module_path": "./build/Release",
     "host": "https://github.com/tauu/win-audio/releases/download/",
     "remote_path": "v{version}"
   },
