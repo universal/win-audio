@@ -2,7 +2,7 @@
   "name": "win-audio",
   "version": "2.0.2",
   "description": "Get, Set and Watch Speaker/Microphone Volume on Windows",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "os": [
     "win32"
   ],
@@ -11,22 +11,31 @@
     "babel": "npx babel src --out-dir dist"
   },
   "author": "Francesco Cannizzaro <francescosaverio.cannizzaro@gmail.com>",
+  "contributors": [
+    "Georg Wechslberger <tauu@h2overclock.de>"
+  ],
   "license": "MIT",
   "gypfile": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fcannizzaro/win-audio.git"
+    "url": "git+https://github.com/tauu/win-audio.git"
   },
   "bugs": {
-    "url": "https://github.com/fcannizzaro/win-audio/issues"
+    "url": "https://github.com/tauu/win-audio/issues"
   },
-  "homepage": "https://github.com/fcannizzaro/win-audio#readme",
+  "homepage": "https://github.com/tauu/win-audio#readme",
   "keywords": [
     "audio",
     "microphone",
     "speaker",
     "windows"
   ],
+  "binary": {
+    "module_name": "win-audio",
+    "module_path": "./src/",
+    "host": "https://github.com/tauu/win-audio/releases/download/",
+    "remote_path": "v{version}"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
