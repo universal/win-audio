@@ -40,3 +40,6 @@ build
 .yml
 .babelrc
 .appveyor.yml
+
+# Ignore prebuilds
+prebuilds
