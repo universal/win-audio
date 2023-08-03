@@ -19,7 +19,7 @@ This version requires **N-API**, and **node** version **>= 8.6.0**
 
 # Module
 ```javascript
- const win = require('win-audio');
+ const win = require('@universal/win-audio');
 
  // manage speaker volume
  const speaker = win.speaker;
@@ -31,7 +31,7 @@ This version requires **N-API**, and **node** version **>= 8.6.0**
 # Usage
 
 ```javascript
-const audio = require('win-audio').speaker;
+const audio = require('@universal/win-audio').speaker;
 
 audio.polling(200);
 
@@ -67,7 +67,7 @@ audio.mute();
 #### `set(value: int)`
 
  Set a new master volume.
- 
+
  - value: percentage of new volume. **[0-100]**
 
 #### `increase(value: int)`
@@ -104,4 +104,6 @@ Called when volume is muted/unmuted.
 
 
 # Author
-Francesco Saverio Cannizzaro
+* Francesco Saverio Cannizzaro
+* Georg Wechslberger
+* Johannes Ziesmer

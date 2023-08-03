@@ -1,26 +1,28 @@
 {
-  "name": "@tauubyebye/win-audio",
-  "version": "2.0.4",
+  "name": "@universal/win-audio",
+  "version": "2.0.5",
   "description": "Get, Set and Watch Speaker/Microphone Volume on Windows",
   "main": "src/index.js",
   "scripts": {
     "test": "npm i && node sample",
-    "babel": "npx babel src --out-dir dist"
+    "babel": "npx babel src --out-dir dist",
+    "prebuild": "prebuild -t 25.4.0 -r electron"
   },
   "author": "Francesco Cannizzaro <francescosaverio.cannizzaro@gmail.com>",
   "contributors": [
-    "Georg Wechslberger <tauu@h2overclock.de>"
+    "Georg Wechslberger <tauu@h2overclock.de>",
+    "Johannes Ziesmer <jhedtrich@gmail.com>"
   ],
   "license": "MIT",
   "gypfile": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tauu/win-audio.git"
+    "url": "git+https://github.com/universal/win-audio.git"
   },
   "bugs": {
-    "url": "https://github.com/tauu/win-audio/issues"
+    "url": "https://github.com/universal/win-audio/issues"
   },
-  "homepage": "https://github.com/tauu/win-audio#readme",
+  "homepage": "https://github.com/universal/win-audio#readme",
   "keywords": [
     "audio",
     "microphone",
@@ -30,12 +32,13 @@
   "binary": {
     "module_name": "win-audio",
     "module_path": "./build/Release",
-    "host": "https://github.com/tauu/win-audio/releases/download/",
+    "host": "https://github.com/universal/win-audio/releases/download/",
     "remote_path": "v{version}"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4"
+    "@babel/preset-env": "^7.3.4",
+    "prebuild": "^11.0.4"
   }
 }
