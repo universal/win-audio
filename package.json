@@ -1,12 +1,13 @@
 {
   "name": "@universal/win-audio",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Get, Set and Watch Speaker/Microphone Volume on Windows",
   "main": "src/index.js",
   "scripts": {
     "test": "npm i && node sample",
     "babel": "npx babel src --out-dir dist",
-    "prebuild": "prebuild -t 25.4.0 -r electron"
+    "build": "prebuild -t 3 -t 8 -r napi",
+    "upload": "prebuild --upload-all"
   },
   "author": "Francesco Cannizzaro <francescosaverio.cannizzaro@gmail.com>",
   "contributors": [
@@ -30,10 +31,11 @@
     "windows"
   ],
   "binary": {
-    "module_name": "win-audio",
-    "module_path": "./build/Release",
-    "host": "https://github.com/universal/win-audio/releases/download/",
-    "remote_path": "v{version}"
+    "napi_versions": [3]
+  },
+  "config": {
+    "runtime": "napi",
+    "target": 3
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
