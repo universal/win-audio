@@ -1,13 +1,13 @@
 {
-  "name": "@universal/win-audio",
+  "name": "@lifbi-tbt/win-audio",
   "version": "2.0.6",
   "description": "Get, Set and Watch Speaker/Microphone Volume on Windows",
   "main": "src/index.js",
   "scripts": {
     "test": "npm i && node sample",
     "babel": "npx babel src --out-dir dist",
-    "build": "prebuild -t 3 -t 8 -r napi",
-    "upload": "prebuild --upload-all"
+    "install": "node-gyp-build",
+    "build": "prebuildify --napi --electron-compat --strip"
   },
   "author": "Francesco Cannizzaro <francescosaverio.cannizzaro@gmail.com>",
   "contributors": [
@@ -31,7 +31,9 @@
     "windows"
   ],
   "binary": {
-    "napi_versions": [3]
+    "napi_versions": [
+      3
+    ]
   },
   "config": {
     "runtime": "napi",
@@ -41,6 +43,10 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
-    "prebuild": "^11.0.4"
+    "prebuildify": "^5.0.1",
+    "node-gyp": "^9.4.0"
+  },
+  "dependencies": {
+    "node-gyp-build": "^4.6.0"
   }
 }

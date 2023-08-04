@@ -1,5 +1,7 @@
 const EventEmitter = require('events');
-const audio = require('../build/Release/audio.node');
+// const audio = require('../build/Release/audio.node');
+const path = require('path');
+const audio = require('node-gyp-build')(path.join(__dirname, '..'));
 
 var init = (mic) => {
 
