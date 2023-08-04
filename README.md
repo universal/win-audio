@@ -1,9 +1,8 @@
 # win-audio
 Get, Set and Watch Speaker/Microphone Volume on Windows
 
-[![Build status](https://ci.appveyor.com/api/projects/status/iwo2mdxkn5fsday1?svg=true)](https://ci.appveyor.com/project/fcannizzaro/win-audio)
-[![npm](https://img.shields.io/npm/v/win-audio.svg)](https://www.npmjs.com/package/win-audio)
-[![npm](https://img.shields.io/npm/dm/win-audio.svg)](https://www.npmjs.com/package/win-audio)
+[![npm](https://img.shields.io/npm/v/win-audio.svg)](https://www.npmjs.com/package/@lifbi_tbt/win-audio)
+[![npm](https://img.shields.io/npm/dm/win-audio.svg)](https://www.npmjs.com/package/@lifbi_tbt/win-audio)
 
 # Install
 
@@ -19,7 +18,7 @@ This version requires **N-API**, and **node** version **>= 8.6.0**
 
 # Module
 ```javascript
- const win = require('@universal/win-audio');
+ const win = require('@lifbi_tbt/win-audio');
 
  // manage speaker volume
  const speaker = win.speaker;
@@ -31,7 +30,7 @@ This version requires **N-API**, and **node** version **>= 8.6.0**
 # Usage
 
 ```javascript
-const audio = require('@universal/win-audio').speaker;
+const audio = require('@lifbi_tbt/win-audio').speaker;
 
 audio.polling(200);
 
