@@ -7,7 +7,7 @@ Get, Set and Watch Speaker/Microphone Volume on Windows
 # Install
 
 ```sh
-npm i --save win-audio
+npm i --save @lifbi_tbt/win-audio
 ```
 
 ### Requirements

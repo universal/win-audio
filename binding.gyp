@@ -2,6 +2,9 @@
   "targets": [
     {
       "target_name": "audio",
+      "defines": [
+        "NAPI_VERSION=<(napi_build_version)",
+      ],
       'conditions': [
         ['OS=="win"', {
           "sources": ["audio-napi.cc"],
@@ -15,8 +18,5 @@
         }],
       ]
     }
-  ],
-  "defines": [
-    "NAPI_VERSION=<(napi_build_version)",
   ]
 }
