@@ -1,6 +1,6 @@
 {
   "name": "@lifbi_tbt/win-audio",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Get, Set and Watch Speaker/Microphone Volume on Windows",
   "main": "src/index.js",
   "scripts": {
@@ -30,15 +30,6 @@
     "speaker",
     "windows"
   ],
-  "binary": {
-    "napi_versions": [
-      3
-    ]
-  },
-  "config": {
-    "runtime": "napi",
-    "target": 3
-  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
